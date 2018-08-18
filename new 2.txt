@@ -6,4 +6,9 @@ git操作
 2.git add <file> 将文件告诉git系统，提交到缓存区  可以反复多次添加。
 3.git commit -m “文件说明”  将缓存区的文件一次全部添加到库。
 
-4.git status
+4.git status  查看仓库当前状态
+5.git diff 查看不同点
+
+6.git log 查看最近到最远的日志
+	commit 后面的是commit id（版本号）；
+7.时光回溯： git reset -hard HEAD^    HEAD表示当前版本，往前回溯几个则加几个^或者~n
