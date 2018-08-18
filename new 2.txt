@@ -43,5 +43,8 @@ git本地和github关联
 3.然后自己就可以和（1）一样推送自己的修改到github保存。
 4.在github上pull request可以发送给库原作者。
 
+（3）怎么将本地更新为GitHub上最新的代码
+	git pull origin master
+
 
 
