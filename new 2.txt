@@ -1,2 +1,7 @@
 Git is a version control system.
 Git is free software.
+
+git操作
+1.git init 初始化仓库
+2.git add <file> 将文件告诉git系统，提交到缓存区  可以反复多次添加。
+3.git commit -m “文件说明”  将缓存区的文件一次全部添加到库。
