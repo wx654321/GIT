@@ -1,0 +1,50 @@
+Git is a version control system.
+Git is free software.
+
+1.下载git
+2.设置	git config -–global user.name "xxx" 
+		git config --global user.email "xxx@xx.com"
+		
+git操作-库
+1.git init 初始化仓库
+2.git add <file> 将文件告诉git系统，提交到缓存区  可以反复多次添加。
+3.git commit -m “文件说明”  将缓存区的文件一次全部添加到库。
+
+4.git status  查看仓库当前状态
+5.git diff 查看不同点
+
+6.git log 查看最近到最远的日志
+	commit 后面的是commit id（版本号）；
+7.时光回溯： git reset -hard HEAD^    HEAD表示当前版本，往前回溯几个则加几个^或者~n
+
+8.在命令行窗口没关闭前可以用git reset -hard commit_id <版本号前几个数>。去特定版本。
+
+9.git reflog 查看命令历史
+
+10.去掉工作区的修改 git checkout --file
+11.去掉暂存区的修改
+		1.git reset HEAD <file>
+		2.git checkout -- file
+
+git本地和github关联
+（1）本地怎么分享到github对应库
+1.创建github账号
+2.生成计算机ssh钥匙 ssh-keygen -t rsa -C "youremail@example.com"
+	将主目录里面的ssh/id_rsa.pub内容添加到ssh钥匙
+1.创建github库
+3.将usename 和useemail改为github上的名字
+4.根据github库的提示在本地库操作。
+	注：和那个本地库连接则在那个本地库下运行相关代码连接
+5.推送命令：git push origin master
+
+（2）怎么把github上的库添加到本地
+1.先把开源的库fork到自己github存储库
+2.clone到自己电脑本地
+3.然后自己就可以和（1）一样推送自己的修改到github保存。
+4.在github上pull request可以发送给库原作者。
+
+（3）怎么将本地更新为GitHub上最新的代码
+	git pull origin master
+
+
+
