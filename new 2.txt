@@ -27,6 +27,7 @@ git操作-库
 		2.git checkout -- file
 
 git本地和github关联
+（1）本地怎么分享到github对应库
 1.创建github账号
 2.生成计算机ssh钥匙 ssh-keygen -t rsa -C "youremail@example.com"
 	将主目录里面的ssh/id_rsa.pub内容添加到ssh钥匙
@@ -35,5 +36,12 @@ git本地和github关联
 4.根据github库的提示在本地库操作。
 	注：和那个本地库连接则在那个本地库下运行相关代码连接
 5.推送命令：git push origin master
+
+（2）怎么把github上的库添加到本地
+1.先把开源的库fork到自己github存储库
+2.clone到自己电脑本地
+3.然后自己就可以和（1）一样推送自己的修改到github保存。
+4.在github上pull request可以发送给库原作者。
+
 
 
