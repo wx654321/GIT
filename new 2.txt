@@ -1,7 +1,11 @@
 Git is a version control system.
 Git is free software.
 
-git操作
+1.下载git
+2.设置	git config -–global user.name "xxx" 
+		git config --global user.email "xxx@xx.com"
+		
+git操作-库
 1.git init 初始化仓库
 2.git add <file> 将文件告诉git系统，提交到缓存区  可以反复多次添加。
 3.git commit -m “文件说明”  将缓存区的文件一次全部添加到库。
@@ -23,10 +27,13 @@ git操作
 		2.git checkout -- file
 
 git本地和github关联
+1.创建github账号
+2.生成计算机ssh钥匙 ssh-keygen -t rsa -C "youremail@example.com"
+	将主目录里面的ssh/id_rsa.pub内容添加到ssh钥匙
 1.创建github库
-2.添加密匙ssh
 3.将usename 和useemail改为github上的名字
 4.根据github库的提示在本地库操作。
+	注：和那个本地库连接则在那个本地库下运行相关代码连接
 5.推送命令：git push origin master
 
 
